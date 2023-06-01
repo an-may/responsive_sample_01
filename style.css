@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  #wrap {
+    width: 84%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+header {
+  background: #000b00;
+  color: #00a3af;
+  padding: 20px;
+}
+.main-menu {
+  background: #000b00;
+}
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+  }
+  .main-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+  }
+  .main-menu ul li a:hover {
+    background: #b7282e;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+section {
+  background: #c0c6c9;
+  flex: 3;
+  padding: 20px;
+}
+article {
+  background: #FFF;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+article img {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+aside {
+  background: #8491c3;
+  flex: 1;
+}
+.sub-menu {
+  background: #2a4073;
+}
+.sub-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+  }
+  .sub-menu ul li a:hover {
+    background: #e6b422;
+  }
+footer {
+  background: #000b00;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  .main-menu ul {
+    display: block;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+    flex-direction: unset;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+  }
+}
+
+/* 濡羽色：#000b00,　浅葱色：#00a3af,　茜色：#b7282e,
+   金色：#e6b422,　深縹：#2a4073,　灰青：#c0c6c9,　白：#ffffff */
+   /* 紅掛空色：#8491c3 */
